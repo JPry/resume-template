@@ -1,19 +1,44 @@
 # Jobs
-# Springfield Nuclear Power Plant
-- company: Springfield Nuclear Power Plant
-  position: Safety Inspector
-  duration: Nov, 1980 &mdash; Present
-  summary: Write about your core competencies in one or two sentences describing your position. If you held the position for a long time, it could be a longer section, including a couple bullet points	<ul class="resume-item-list"><li>Ate lots of donuts</li><li>Fell asleep rarely</li><li>Left promptly at end of day (sometimes earlier)</li></ul>
-
-# Windmill Crank Operator
-- company: Sir Putt-A-Lot's Merrie Olde Fun Centre
-  position: Safety Inspector
-  duration:  Jun, 1978 &mdash; Sept, 1979
-  summary: If your stint was shorter, feel free to be brief and just call out the most meaningful points of your role. Be concise, and be meaninful. The person reading just needs enough to want to talk to you more about your experience.
 
 
-# Front Desk Attendant
-- company: Simpson Lazer Tag
-  position: Front Desk Attendant
-  duration:   Jun, 1975  &mdash; May, 1978
-  summary: Boy, when Marge first told me she was going to the Police Academy, I thought it would be fun and exciting, you know, like the movie... Spaceballs. But instead, it's been painful and disturbing, like the movie Police Academy.
+- company: WebDevStudios
+  position: WordPress Developer
+  duration: 2015 &mdash; 2016
+  summary: |
+    - Worked as part of a distributed team
+    - Key developer for long-term Microsoft site
+    - Collaborated with team members to ensure smooth development process
+    - Communicated directly with clients regarding progress of work and explanation of functionality
+    - Developed custom plugin and theme functionality for client WordPress sites
+
+- company: WP Engine, Inc.
+  position: Jr. Developer
+  duration: 2014 &mdash; 2015
+  summary: |
+    - Worked as part of a distributed team
+    - Wrote and maintained core WP Engine code
+    - Developed and deployed new features
+    - Identified and fixed bugs
+    - Enhanced existing products
+
+- company: WP Engine, Inc.
+  position: Level 3 Support
+  duration: 2012 &mdash; 2014
+  summary: |
+    - Worked as part of a distributed team
+    - Provided professional customer support
+    - Wrote technical documents for internal and external use
+    - Troubleshot complex issues between websites and servers
+    - Diagnosed bugs and filed reports to development
+    - Submitted bug fixes to development
+
+- company: Bentley Systems, Inc.
+  position: Technical Support Analyst
+  duration: 2008 &mdash; 2012
+  summary: |
+    - Built relationships with customers
+    - Troubleshot complex technical issues
+    - Provided technical advice
+    - Communicated complex technical concepts to customers of less technical knowledge
+    - Assisted difficult and irate customers
+    - Collaborated with colleagues to provide consistent and reliable customer support
