@@ -1,12 +1,24 @@
 # Skills
-# Donut design
-- skill: Donut design
-  description: Sprinkle art, icing design, eclair management, taste testing, donut/coffee pairing research
 
-# Craft beer brewing
-- skill: Craft beer brewing
-  description: Hops inspection, brew testing, distribution management, bottle label design, festival and event management
-
-# Family leadership
-- skill: Family leadership
-  description: Bread winning, conflict resolution, couch inspection, TV longevity testing
+- skill: WordPress
+  description: Deep knowledge of core code and best practices. Experience since 2010.
+- skill: PHP
+  description: Experience since 2009.
+- skill: Composer
+  description: Creating projects utilizing Composer, as well as setting
+- skill: Symfony Components
+  description: Custom Console applications, Dependency Injection, Finder, Process, Yaml.
+- skill: Some Python
+  description: Experience developing Unit Tests for Command Line applications, and familiarity with Python language.
+- skill: Some Javascript
+  description: Experience developing simple scripts to manipulate page content, and familiarity with jQuery and Select2.
+- skill: Ansible
+  description: Custom Ansible playbooks.
+- skill: Nginx
+  description: Configuring Nginx server.
+- skill: Apache
+  description: Configuring Apache server.
+- skill: HTML
+  description: Developing markup for web rendering.
+- skill: CSS
+  description: Styling markup, and experience with Sass.
