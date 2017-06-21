@@ -2,10 +2,28 @@
 
 - project: Yikes, Inc Easy Mailchimp Extender V3 API
   role: Consultant
-  duration: 2016
+  duration: false
   description: |
     A WordPress plugin that allows you to easily add MailChimp sign up forms to your site.
 
     I was brought on as a consultant to update the codebase to utilize version 3 of
     [MailChimp's API](https://developer.mailchimp.com).
 
+- project: WP CLI for WP Engine
+  role: Developer
+  duration: false
+  description: |
+    Created a custom package of [WP CLI](http://wp-cli.org) that is able to run in the
+    WP Engine environment. I also set up security for WP CLI to ensure that individual clients
+    can access their own sites but not the sites of neighbors.
+
+    The custom packaging of WP CLI involved reengineering the WP CLI build process to build a
+    custom PHAR that could switch to the necessary AppArmor profile for customer sites.
+
+- project: Multisite Conversion script
+  role: Developer
+  duration: false
+  description: |
+    Converting a WordPress site to Multisite required many steps on the WP Engine platform. I developed
+    a CLI utility that would automate all of the steps and free up significant time for WP Engine
+    support specialists.
