@@ -72,7 +72,9 @@
 			<h3 class="resume-item-title" itemprop="name">{{ project.project }}</h3>
 			<h4 class="resume-item-details" itemprop="description">
 				<span style="float:left;">{{ project.role }}</span>
+				{% if project.duration %}
 				<span style="float:right;">{{ project.duration }}</span>
+				{% endif %}
 			</h4>
 			<br />
 			<div class="resume-item-copy">{{ project.description | markdownify }}</div>
