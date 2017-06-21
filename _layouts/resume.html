@@ -28,7 +28,11 @@
 		</div>
 
 		<div class="executive-summary no-print" itemprop="description">
+			{% if page.header_intro %}
+			{{ page.header_intro | markdownify }}
+			{% else %}
 			{{ site.resume_header_intro | markdownify }}
+			{% endif %}
 		</div>
 
 		{% if site.resume_looking_for_work %}
