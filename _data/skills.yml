@@ -12,7 +12,7 @@
   description: Custom Console applications, Dependency Injection, Finder, Process, Yaml.
 - skill: Python
   description: Experience developing Unit Tests for Command Line applications, and familiarity with Python language.
-- skill: Javascript
+- skill: JavaScript
   description: Experience developing simple scripts to manipulate page content, and familiarity with jQuery and Select2.
 - skill: Ansible
   description: Custom Ansible playbooks.
