@@ -1,23 +1,25 @@
 # Skills
 
 - skill: WordPress
-  description: Deep knowledge of core code and best practices. Experience since 2010.
+  description: |
+    Deep knowledge of core code and best practices. Experience writing Unit Tests, working with WP CLI,
+    and developing WP REST API endpoints.
 - skill: PHP
-  description: Experience since 2009.
+  description: Wide experience across many projects, including developing custom code and refactoring existing code.
 - skill: Composer
-  description: Creating projects utilizing Composer, as well as setting
+  description: Creating projects utilizing Composer, as well as setting up projects on Packagist.
 - skill: Symfony Components
   description: Custom Console applications, Dependency Injection, Finder, Process, Yaml.
-- skill: Some Python
+- skill: Python
   description: Experience developing Unit Tests for Command Line applications, and familiarity with Python language.
-- skill: Some Javascript
+- skill: Javascript
   description: Experience developing simple scripts to manipulate page content, and familiarity with jQuery and Select2.
 - skill: Ansible
   description: Custom Ansible playbooks.
 - skill: Nginx
-  description: Configuring Nginx server.
+  description: Configuring Nginx servers.
 - skill: Apache
-  description: Configuring Apache server.
+  description: Configuring Apache servers.
 - skill: HTML
   description: Developing markup for web rendering.
 - skill: CSS
