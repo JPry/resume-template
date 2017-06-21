@@ -8,6 +8,10 @@ markdown: kramdown
 sass:
   sass_dir: _sass
   style: compressed
+exclude:
+  - README.md
+  - Gemfile*
+  - index.html
 
 # Resume settings
 resume_avatar: 84552f74b71a1a3e6aae380aa9ab3bd3
