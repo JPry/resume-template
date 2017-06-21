@@ -1,12 +1,11 @@
 # Projects
-# donutfinder.io
-- project: donutfinder.io
-  role: Founder & Primary Developer
-  duration: 2012 &mdash; Present
-  description: Donut Locator is an open source node/ember app that lets users find donuts within a defined radius from their home.
 
-#Springfield Donut Eater's User Group
-- project: Springfield Donut Eater's User Group
-  role: Co-Founder & Organizer
-  duration: 2007 &mdash; Present
-  description: DEUG is a local monthly meetup in Springfield where we share all the latest tips and tricks for dat donut lifestyle. I organize the group, and typically eat most of the donuts.
+- project: Yikes, Inc Easy Mailchimp Extender V3 API
+  role: Consultant
+  duration: 2016
+  description: |
+    A WordPress plugin that allows you to easily add MailChimp sign up forms to your site.
+
+    I was brought on as a consultant to update the codebase to utilize version 3 of
+    [MailChimp's API](https://developer.mailchimp.com).
+
