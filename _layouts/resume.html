@@ -23,7 +23,7 @@
 		</div>
 
 		<div class="title-bar no-print">
-			<h2 class="header-title" itemprop="jobTitle">{{ site.resume_title }}</h2>
+			<h2 class="header-title" itemprop="jobTitle">{% if page.resume_title %}{{ page.resume_title }}{% else %}{{ site.resume_title }}{% endif %}</h2>
 			{% include icon-links.html %}
 		</div>
 
