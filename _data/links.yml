@@ -3,5 +3,7 @@
   description: Personal code samples
 - url: http://plugins.jpry.com
   description: Custom WordPress plugins
+- url: https://profiles.wordpress.org/jpry/#content-plugins
+  description: WordPress.org Plugins
 - url: http://gh.jpry.com/presentations/
   description: Presentation slides
