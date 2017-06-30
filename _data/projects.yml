@@ -7,7 +7,8 @@
     A WordPress plugin that allows you to easily add MailChimp sign up forms to your site.
 
     I was brought on as a consultant to update the codebase to utilize version 3 of
-    [MailChimp's API](https://developer.mailchimp.com).
+    [MailChimp's API](https://developer.mailchimp.com). All of the details of this effort
+    are [available on GitHub](https://github.com/yikesinc/yikes-inc-easy-mailchimp-extender/issues/462).
 
 - project: WP CLI for WP Engine
   role: Developer
