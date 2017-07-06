@@ -211,13 +211,23 @@
 	.no-print {
 		display: none !important
 	}
+
 	.print-only {
 		display: block !important
 	}
+
 	body {
 		font-size: 12px;
 		line-height: 1rem;
 	}
+
+	a[href^="http"]:after {
+		content: " (" attr(href) ")";
+		font-size: 0.8em;
+		font-weight: normal;
+		text-decoration: none;
+	}
+
 	.page-header {
 		padding: 1rem 0 .2rem;
 		.header-name {
@@ -226,6 +236,7 @@
 			margin: 0 0 .2rem;
 		}
 	}
+
 	.section-header {
 		@include section_border_thin;
 		margin-bottom: 1rem;
@@ -234,11 +245,18 @@
 			line-height: 1.5rem;
 		}
 	}
+
 	.content-section {
 		margin: 0 0 1rem;
+
+		a {
+			border-bottom: none;
+		}
+
 		.resume-item {
 			margin-bottom: 1rem;
 		}
+
 		.resume-item-title {
 			font-size: 16px;
 			line-height: .7em;
