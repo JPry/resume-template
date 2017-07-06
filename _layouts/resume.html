@@ -46,7 +46,7 @@
 
 	{% if site.resume_section_skills %}
 	<!-- begin Skills -->
-	<section class="content-section">
+	<section class="content-section skills">
 
 		<header class="section-header">
 			<a id="user-content-skills" class="anchor" href="#" aria-hidden="true"></a>
@@ -71,7 +71,7 @@
 
 	{% if site.resume_section_projects %}
 	<!-- begin Projects -->
-	<section class="content-section">
+	<section class="content-section projects">
 		<header class="section-header">
 			<a id="user-content-projects" class="anchor" href="#" aria-hidden="true"></a>
 			<h2><a href="#user-content-projects">Projects</a></h2>
@@ -97,7 +97,7 @@
 
 	{% if site.resume_section_experience %}
 	<!-- begin Experience -->
-	<section class="content-section">
+	<section class="content-section experience">
 
 		<header class="section-header">
 			<a id="user-content-experience" class="anchor" href="#" aria-hidden="true"></a>
@@ -122,7 +122,7 @@
 
 	{% if site.resume_section_education %}
 	<!-- begin Education -->
-	<section class="content-section">
+	<section class="content-section education">
 		<header class="section-header">
 			<a id="user-content-education" class="anchor" href="#" aria-hidden="true"></a>
 			<h2><a href="#user-content-education">Education</a></h2>
@@ -145,7 +145,7 @@
 
 	{% if site.resume_section_recognition %}
 	<!-- begin Recognition -->
-	<section class="content-section">
+	<section class="content-section recognition">
 
 		<header class="section-header">
 			<a id="user-content-recognition" class="anchor" href="#" aria-hidden="true"></a>
@@ -166,7 +166,7 @@
 
 	{% if site.resume_section_associations %}
 	<!-- begin Associations -->
-	<section class="content-section">
+	<section class="content-section associations">
 
 		<header class="section-header">
 			<a id="user-content-associations" class="anchor" href="#user-content-associations" aria-hidden="true"></a>
@@ -187,7 +187,7 @@
 
 	{% if site.resume_section_links %}
 	<!-- begin Links -->
-	<section class="content-section">
+	<section class="content-section links">
 
 		<header class="section-header">
 			<a id="user-content-links" class="anchor" href="#user-content-links" aria-hidden="true"></a>
@@ -195,7 +195,7 @@
 		</header>
 
 		<div class="resume-item">
-			<ul class="resume-item-list">
+			<ul class="resume-item-list no-print">
 				{% for link in site.data.links %}
 				<li><a href="{{ link.url }}">{{ link.description }}</a></li>
 				{% endfor %}
@@ -208,7 +208,7 @@
 
 	{% if site.resume_print_social_links %}
 	<!-- begin Print Social Links -->
-	<section class="content-section print-only">
+	<section class="content-section social-links print-only">
 
 		<header class="section-header">
 			<h2>Social Links</h2>
@@ -222,7 +222,7 @@
 	<!-- end Print Social Links -->
 	{% endif %}
 
-	<footer class="page-footer">
+	<footer class="page-footer no-print">
 		<p class="footer-line">Made by <a href="https://github.com/JPry">JPry</a>, inspired by
 			<a href="https://github.com/jglovier/resume-template">jglovier's resume template</a>.</p>
 	</footer>
