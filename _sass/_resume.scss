@@ -250,5 +250,20 @@
 			line-height: .7em;
 			font-style: italic;
 		}
+
+		&.skills {
+			display: flex;
+			flex-flow: row wrap;
+
+			.section-header {
+				flex: 1 100%;
+			}
+
+			.resume-item {
+				flex-basis: 48%;
+				align-content: space-between;
+				justify-content: space-around;
+			}
+		}
 	}
 }
