@@ -200,6 +200,11 @@
 				<li><a href="{{ link.url }}">{{ link.description }}</a></li>
 				{% endfor %}
 			</ul>
+			<ul class="resume-item-list print-only">
+				{% for link in site.data.links %}
+				<li>{{ link.description }}: {{ link.url }}</li>
+				{% endfor %}
+			</ul>
 		</div>
 
 	</section>
