@@ -81,9 +81,9 @@
 		<div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
 			<h3 class="resume-item-title" itemprop="name">{{ project.project }}</h3>
 			<h4 class="resume-item-details" itemprop="description">
-				<span style="float:left;">{{ project.role }}</span>
+				<span class="left">{{ project.role }}</span>
 				{% if project.duration %}
-				<span style="float:right;">{{ project.duration }}</span>
+				<span class="right">{{ project.duration }}</span>
 				{% endif %}
 			</h4>
 			<br />
@@ -108,8 +108,8 @@
 		<div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
 			<h3 class="resume-item-title" itemprop="name">{{ job.company }}</h3>
 			<h4 class="resume-item-details" itemprop="description">
-				<span style="float:left;">{{ job.position }}</span>
-				<span style="float:right;">{{ job.duration }}</span>
+				<span class="left">{{ job.position }}</span>
+				<span class="right">{{ job.duration }}</span>
 			</h4><br />
 			<div class="resume-item-copy">{{ job.summary | markdownify }}</div>
 		</div><!-- end of resume-item -->
@@ -132,8 +132,8 @@
 		<div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/CollegeOrUniversity">
 			<h3 class="resume-item-title" itemprop="name">{{ education.uni }}</h3>
 			<h4 class="resume-item-details" itemprop="description">
-				<span style="float:left;">{{ education.degree }}</span>
-				<span style="float:right;">{{ education.year }}</span>
+				<span class="left">{{ education.degree }}</span>
+				<span class="right">{{ education.year }}</span>
 			</h4>
 			<h5 class="resume-item-details" itemprop="description">{{ education.awards }}</h5>
 			<div class="resume-item-copy">{{ education.summary | markdownify }}</div>
