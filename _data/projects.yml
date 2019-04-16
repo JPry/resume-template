@@ -1,5 +1,16 @@
 # Projects
 
+- project: WooCommerce Subscriptions Limited Recurring Coupons
+  role: Developer
+  duration: false
+  description: |
+    [Limited payment coupons](https://docs.woocommerce.com/document/subscriptions/limited-payment-coupon-guide/)
+    allow store managers to create coupons that apply to a certain number of subscription payments.
+
+    Limited coupons are coupons that will apply a discount for a limited number of payments. For example,
+    if a store manager wants only the first three months of a monthly subscription to be discounted,
+    they could use this feature to create a coupon that applies to three payments.
+
 - project: Yikes, Inc Easy Mailchimp Extender V3 API
   role: Consultant
   duration: false
