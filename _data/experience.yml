@@ -1,5 +1,17 @@
 # Jobs
 
+- company: Prospress, Inc
+  position: Software Engineer
+  duration: 2017 &ndash; present
+  summary: |
+    - Worked to maintain and enhance company products, including
+      [WooCommerce Subscriptions](https://woocommerce.com/products/woocommerce-subscriptions/),
+      [WooCommerce One Page Checkout](https://woocommerce.com/products/woocommerce-one-page-checkout/), and
+      [Action Scheduler](https://actionscheduler.org)
+    - Collaborated with Support team coworkers on support tasks, product insight, and product enhancements and bugs
+    - Communicated directly with clients of [Subscribe.me](https://subscribe.me) and collaborated with them
+      to acheive their business goals
+
 - company: 10up
   position: Web Engineer
   duration: 2016 &mdash; 2017
