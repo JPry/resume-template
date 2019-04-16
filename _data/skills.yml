@@ -3,7 +3,9 @@
 - skill: WordPress
   description: |
     Deep knowledge of core code and best practices. Experience writing unit tests, working with WP CLI,
-    and developing WP REST API endpoints.
+    and developing WP REST API endpoints. Core contributor.
+- skill: WooCommerce
+  description: Extension developer and core contributor.
 - skill: PHP
   description: Wide experience across many projects, including developing custom code and refactoring existing code.
 - skill: Composer
