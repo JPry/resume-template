@@ -103,7 +103,7 @@
 			<h2><a href="#user-content-experience">Experience</a></h2>
 		</header>
 
-		{% for job in site.data.experience %}
+		{% for job in site.data.experience limit:5 %}
 		<div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
 			<h3 class="resume-item-title" itemprop="name">{{ job.company }}</h3>
 			<h4 class="resume-item-details" itemprop="description">
