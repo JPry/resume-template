@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en_US">
 
 {% include head.html %}
 
 <body class="theme-{% if site.resume_theme %}{{ site.resume_theme }}{% endif %}">
 
-<div class="wrapper" itemscope itemtype="http://schema.org/Person">
+<div class="wrapper" itemscope itemtype="https://schema.org/Person">
 
 	<header class="page-header">
 
@@ -77,7 +77,7 @@
 		</header>
 
 		{% for project in site.data.projects %}
-		<div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+		<div class="resume-item" itemscope itemprop="worksFor" itemtype="https://schema.org/Organization">
 			<h3 class="resume-item-title" itemprop="name">{{ project.project }}</h3>
 			<h4 class="resume-item-details" itemprop="description">
 				<span class="left">{{ project.role }}</span>
@@ -104,7 +104,7 @@
 		</header>
 
 		{% for job in site.data.experience limit:5 %}
-		<div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+		<div class="resume-item" itemscope itemprop="worksFor" itemtype="https://schema.org/Organization">
 			<h3 class="resume-item-title" itemprop="name">{{ job.company }}</h3>
 			<h4 class="resume-item-details" itemprop="description">
 				<span class="left">{{ job.position }}</span>
@@ -128,7 +128,7 @@
 		</header>
 
 		{% for education in site.data.education %}
-		<div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/CollegeOrUniversity">
+		<div class="resume-item" itemscope itemprop="worksFor" itemtype="https://schema.org/CollegeOrUniversity">
 			<h3 class="resume-item-title" itemprop="name">{{ education.uni }}</h3>
 			<h4 class="resume-item-details" itemprop="description">
 				<span class="left">{{ education.degree }}</span>
@@ -174,7 +174,7 @@
 
 		{% for association in site.data.associations %}
 		<div class="resume-item">
-			<h3 class="resume-item-title"><a href="http://beerfortheworld.com">{{ association.organisation }}</a></h3>
+			<h3 class="resume-item-title"><a href="https://beerfortheworld.com">{{ association.organisation }}</a></h3>
 			<h4 class="resume-item-details">{{ association.role }} &bull; {{ association.year }}</h4>
 			<div class="resume-item-copy">{{ association.summary | markdownify }}</div>
 		</div>
