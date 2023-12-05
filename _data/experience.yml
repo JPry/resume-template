@@ -1,8 +1,22 @@
 # Jobs
 
+- company: Automattic, Inc
+  position: Software Engineer
+  duration: 2019 &ndash; 2023
+  summary: |
+    - Designed and developed the initial [Google Listings and Ads](https://github.com/woocommerce/google-listings-and-ads)
+      extension for integrating WooCommerce shops with Google Merchant Center.
+    - Created [a GitHub Action](https://github.com/woocommerce/grow/tree/trunk/packages/github-actions/actions/hook-documentation)
+      for documenting WordPress hooks within a codebase and generating a markdown file.
+    - Collaborated with social Partners (Meta, Google, TikTok, and Pinterest) to develop and maintain integrations with WooCommerce.
+    - Collaborated with colleagues to develop the
+      [Order Attribution](https://github.com/woocommerce/woocommerce-order-source-attribution) feature for WooCommerce,
+      and helped prepare it to be [included into WooCommerce core](https://github.com/woocommerce/woocommerce/pull/39701).
+    - Worked with the [WooCommerce](https://woocommerce.com) team to maintain and enhance multiple extensions for WooCommerce.
+
 - company: Prospress, Inc
   position: Software Engineer
-  duration: 2017 &ndash; present
+  duration: 2017 &ndash; 2019
   summary: |
     - Worked to maintain and enhance company products, including
       [WooCommerce Subscriptions](https://woocommerce.com/products/woocommerce-subscriptions/),
