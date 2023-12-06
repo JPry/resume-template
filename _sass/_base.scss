@@ -1,14 +1,14 @@
 // Base styles
 // ---------------------------------------/
 :root {
-	--body-bg: $white;
-	--body-color: $text_color;
+	--body-bg: #fff;
+	--body-color: #333;
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--body-bg: $black;
-		--body-color: $white;
+		--body-bg: #333;
+		--body-color: #fff;
 	}
 }
 
