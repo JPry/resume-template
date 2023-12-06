@@ -1,5 +1,17 @@
 // Base styles
 // ---------------------------------------/
+:root {
+	--body-bg: $white;
+	--body-color: $text_color;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--body-bg: $black;
+		--body-color: $white;
+	}
+}
+
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -7,12 +19,12 @@
 }
 
 html {
-	background: $white;
+	background: var(--body-bg);
 }
 
 body {
 	@include serif;
-	color: $text_color;
+	color: var(--body-color);
 	font-size: 16px;
 	line-height: 1.5;
 }
@@ -51,14 +63,16 @@ body {
 }
 
 ::-moz-selection {
-	background: rgba(51, 51, 51, .8);
-	color: #fff;
+	background: var(--body-color);
+	color: var(--body-bg);
+	opacity: 80%;
 	text-shadow: none;
 }
 
 ::selection {
-	background: rgba(51, 51, 51, .8);
-	color: #fff;
+	background: var(--body-color);
+	color: var(--body-bg);
+	opacity: 80%;
 	text-shadow: none;
 }
 
