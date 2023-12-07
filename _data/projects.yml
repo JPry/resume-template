@@ -1,5 +1,36 @@
 # Projects
 
+- project: Custom GitHub Action
+  role: Developer
+  duration: false
+  description: |
+    I created a custom [GitHub Action](https://github.com/woocommerce/grow/tree/trunk/packages/github-actions/actions/hook-documentation)
+    to document WordPress hooks within a codebase and generate a markdown file. This action is can be used by WordPress plugin
+    developers to automatically generate documentation for their plugins.
+
+- project: Order Attribution for WooCommerce
+  role: Developer
+  duration: false
+  description: |
+    The [Order Attribution](https://github.com/woocommerce/woocommerce-order-source-attribution) feature for WooCommerce
+    allows store owners to track the source of their orders. This is useful for determining which marketing channels are
+    most effective.
+
+    This feature was first developed as a standalone plugin, and then it was later integrated directly into the
+    core WooCommerce codebase. I played a key role in development in both phases of this project.
+
+- project: Google Listings and Ads
+  role: Developer
+  duration: false
+  description: |
+    In a partnership with Google, I worked to develop the plugin architecture for the
+    [Google Listings and Ads](https://github.com/woocommerce/google-listings-and-ads) extension. The purpose of
+    this extension is to integrate WooCommerce shops with the Google Merchant Center.
+    
+    The architecture of this extension was designed to take advantage of modern PHP practices within a WordPres plugin,
+    and borrows ideas from both WooCommerce core and other modern plugin developers. One of the design goals was to
+    limit repetion in the codebase, and to compartmentalize the code into small, easily testable units.
+
 - project: WooCommerce Subscriptions Limited Recurring Coupons
   role: Developer
   duration: false
