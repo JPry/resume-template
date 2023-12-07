@@ -5,7 +5,7 @@
   duration: false
   description: |
     I created a custom [GitHub Action](https://github.com/woocommerce/grow/tree/trunk/packages/github-actions/actions/hook-documentation)
-    to document WordPress hooks within a codebase and generate a markdown file. This action is can be used by WordPress plugin
+    to document WordPress hooks within a codebase and generate a markdown file. This action can be used by WordPress plugin
     developers to automatically generate documentation for their plugins.
 
 - project: Order Attribution for WooCommerce
