@@ -100,7 +100,7 @@
 		display: inline-block;
 
 		&:hover .icon path {
-			fill: $black;
+			fill: var(--body-color);
 			@include transition(all .2s ease);
 		}
 	}
@@ -108,7 +108,7 @@
 
 .contact-button {
 	@include border-radius(3px);
-	background-color: #efefef;
+	background-color: var(--bg-accent);
 	text-decoration: none;
 	text-align: center;
 	display: block;
@@ -116,7 +116,7 @@
 	width: 220px;
 	font-size: 1.375rem;
 	@include sans_light;
-	color: var(--body-color);
+	color: var(--body-bg);
 	line-height: 55px;
 	@include transition(all .2s ease);
 

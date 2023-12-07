@@ -3,12 +3,14 @@
 :root {
 	--body-bg: #fff;
 	--body-color: #333;
+	--bg-accent: #9c9c9c;
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
 		--body-bg: #333;
 		--body-color: #fff;
+		--bg-accent: #9c9c9c;
 	}
 }
 
