@@ -23,7 +23,7 @@
 - skill: Python
   description: Developing unit tests for command line applications and familiarity with Python language.
 - skill: JavaScript
-  description: Developing scripts to manipulate page content and familiarity with jQuery and and React.
+  description: Developing scripts to manipulate page content and familiarity with jQuery and React.
 - skill: Ansible
   description: Writing custom Ansible playbooks and using playbooks to manage and configure machines.
 - skill: Nginx
