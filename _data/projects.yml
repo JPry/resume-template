@@ -27,9 +27,9 @@
     [Google Listings and Ads](https://github.com/woocommerce/google-listings-and-ads) extension. The purpose of
     this extension is to integrate WooCommerce shops with the Google Merchant Center.
     
-    The architecture of this extension was designed to take advantage of modern PHP practices within a WordPres plugin,
+    The architecture of this extension was designed to take advantage of modern PHP practices within a WordPress plugin,
     and borrows ideas from both WooCommerce core and other modern plugin developers. One of the design goals was to
-    limit repetion in the codebase, and to compartmentalize the code into small, easily testable units.
+    limit repetition in the codebase, and to compartmentalize the code into small, easily testable units.
 
 - project: WooCommerce Subscriptions Limited Recurring Coupons
   role: Developer
