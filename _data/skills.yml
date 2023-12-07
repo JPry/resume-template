@@ -3,8 +3,7 @@
 - skill: PHP
   description: |
     Wide experience across many projects, including developing custom code and refactoring existing code. I have
-    experience in both object-oriented and procedural PHP, and I am familiar with the PHP-FIG standards. I am most
-    familiar with WordPress development, but I have also worked with Symfony components and Laravel.
+    experience in both object-oriented and procedural PHP, and I am familiar with the PHP-FIG standards.
 - skill: WordPress
   description: |
     Deep knowledge of core code and best practices. Experience writing unit tests, working with WP CLI,
