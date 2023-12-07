@@ -1,7 +1,7 @@
 # Site settings
 title: Jeremy Pry Resume
 description: Jeremy Pry's skills and work experience.
-baseurl: /
+baseurl: https://resume.jpry.com
 
 # Build settings
 markdown: kramdown
