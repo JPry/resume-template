@@ -16,13 +16,9 @@
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 	<link rel="icon" type="image/x-icon" href="/favicon.png" />
 
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-6CWM9Q9K6B"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+	<!-- Add Google Analytics if production environment -->
+	{% if jekyll.environment == 'production' %}
+		{% include ga.html %}
+	{% endif %}
 
-		gtag('config', 'G-6CWM9Q9K6B');
-	</script>
 </head>
