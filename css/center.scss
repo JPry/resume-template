@@ -1,0 +1,31 @@
+---
+---
+
+@import "mixins";
+
+.section-header {
+  @include section_border_none;
+  text-align: center;
+}
+
+.content-section {
+  .skill-items {
+    text-align: center;
+  }
+
+  .skill-item {
+    text-align: center;
+    display: inline-flex;
+
+
+    &::after {
+      content: "|";
+      padding: 0 1rem;
+    }
+
+    &:last-child::after {
+      content: "";
+      padding: 0;
+    }
+  }
+}

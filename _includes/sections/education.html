@@ -2,7 +2,7 @@
 <section class="content-section education">
 	<header class="section-header">
 		<a id="user-content-education" class="anchor" href="#" aria-hidden="true"></a>
-		<h2><a href="#user-content-education">{{ site.resume_section_label.education }}</a></h2>
+		<h2><a href="#user-content-education">{{ site.resume_section_labels.education }}</a></h2>
 	</header>
 
 	{% for education in site.data.education %}
@@ -10,9 +10,13 @@
 		<h3 class="resume-item-title" itemprop="name">{{ education.uni }}</h3>
 		<h4 class="resume-item-details" itemprop="description">
 			<span class="left">{{ education.degree }}</span>
-			<span class="right">{{ education.year }}</span>
+			{% if education.year %}
+				<span class="right">{{ education.year }}</span>
+			{% endif %}
 		</h4>
-		<h5 class="resume-item-details" itemprop="description">{{ education.awards }}</h5>
+		{% if education.awards %}
+			<h5 class="resume-item-details" itemprop="description">{{ education.awards }}</h5>
+		{% endif %}
 		<div class="resume-item-copy">{{ education.summary | markdownify }}</div>
 	</div>
 	{% endfor %}

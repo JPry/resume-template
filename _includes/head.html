@@ -12,7 +12,15 @@
 
 	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-	<link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.url }}">
+	<!-- Allow for multiple CSS files in a given page. -->
+	{% if page.css %}
+		{% for css in page.css %}
+			<link rel="stylesheet" href="{{ css | prepend: 'css/' | prepend: site.baseurl }}">
+		{% endfor %}
+	{% else %}
+		<link rel="stylesheet" href="{{ 'css/main.css' | prepend: site.baseurl }}">
+	{% endif %}
+
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 	<link rel="icon" type="image/x-icon" href="/favicon.png" />
 

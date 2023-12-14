@@ -14,22 +14,30 @@
 		</div>
 
 		<div class="title-bar no-print">
-			<h2 class="header-title" itemprop="jobTitle">{% if page.resume_title %}{{ page.resume_title }}{% else %}{{ site.resume_title }}{% endif %}</h2>
+			<h2 class="header-title" itemprop="jobTitle">
+				{% if page.resume_title %}
+					{{ page.resume_title }}
+				{% else %}
+					{{ site.resume_title }}
+				{% endif %}
+			</h2>
 			{% include icon-links.html %}
 		</div>
 
 		<div class="executive-summary no-print" itemprop="description">
 			{% if page.header_intro %}
-			{{ page.header_intro | markdownify }}
+				{{ page.header_intro | markdownify }}
 			{% else %}
-			{{ site.resume_header_intro | markdownify }}
+				{{ site.resume_header_intro | markdownify }}
 			{% endif %}
 		</div>
 
-		{% if site.resume_looking_for_work == 'yes' %}
-		<a href="mailto:{{ site.resume_contact_email }}" class="contact-button no-print" itemprop="email">{{ site.resume_section_labels.contact }}</a>
-		{% elsif site.resume_looking_for_work == 'no' %}
-		<a class="contact-button not-looking no-print">I'm not looking for work right now.</a>
+		{% if page.show_contact_button %}
+			{% if site.resume_looking_for_work == 'yes' %}
+				<a href="mailto:{{ site.resume_contact_email }}" class="contact-button no-print" itemprop="email">{{ site.resume_section_labels.contact }}</a>
+			{% elsif site.resume_looking_for_work == 'no' %}
+				<a class="contact-button not-looking no-print">I'm not looking for work right now.</a>
+			{% endif %}
 		{% endif %}
 
 	</header>

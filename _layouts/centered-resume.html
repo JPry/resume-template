@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en_US">
+
+{% include head.html %}
+
+<body class="theme-{% if site.resume_theme %}{{ site.resume_theme }}{% endif %}">
+
+<div class="wrapper" itemscope itemtype="https://schema.org/Person">
+
+	{% include header.html %}
+
+	{% if site.resume_section_skills %}
+		<!-- begin Skills -->
+		<section class="content-section skills">
+			<header class="section-header">
+				<a id="user-content-skills" class="anchor" href="#" aria-hidden="true"></a>
+				<h2><a href="#user-content-skills">{{ site.resume_section_labels.skills }}</a></h2>
+			</header>
+			<div class="skill-items">
+				{% for skill in site.data.skills %}
+					{% if page.skill_skip and page.skill_skip contains skill.skill %}
+						{% continue %}
+					{% else %}
+						<span class="skill-item">{{ skill.skill }}</span>
+					{% endif %}
+				{% endfor %}
+			</div>
+
+			<div class="resume-item">
+				<h4 class="resume-item-details">{{ skill.skill }}</h4>
+				{% if skill.description %}
+				<p class="resume-item-copy">{{ skill.description }}</p>
+				{% endif %}
+			</div>
+
+
+		</section>
+		<!-- end Skills -->
+	{% endif %}
+
+	{% if site.resume_section_projects %}
+		{% include sections/projects.html %}
+	{% endif %}
+
+	{% if site.resume_section_experience %}
+		{% include sections/experience.html %}
+	{% endif %}
+
+	{% if site.resume_section_education %}
+		{% include sections/education.html %}
+	{% endif %}
+
+	{% if site.resume_section_recognition %}
+	{% include sections/recognition.html %}
+	{% endif %}
+
+	{% if site.resume_section_associations %}
+	{% include sections/associations.html %}
+	{% endif %}
+
+	{% if site.resume_section_links %}
+	{% include sections/links.html %}
+	{% endif %}
+
+	{% if site.resume_print_social_links %}
+	{% include sections/social-links.html %}
+	{% endif %}
+
+	{% include footer.html %}
+
+</div>
+
+</body>
+</html>
