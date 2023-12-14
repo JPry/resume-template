@@ -1,0 +1,23 @@
+<!-- begin Links -->
+<section class="content-section links">
+
+	<header class="section-header">
+		<a id="user-content-links" class="anchor" href="#user-content-links" aria-hidden="true"></a>
+		<h2><a href="#user-content-links">{{ site.resume_section_labels.links }}</a></h2>
+	</header>
+
+	<div class="resume-item">
+		<ul class="resume-item-list no-print">
+			{% for link in site.data.links %}
+			<li><a href="{{ link.url }}">{{ link.description }}</a></li>
+			{% endfor %}
+		</ul>
+		<ul class="resume-item-list print-only">
+			{% for link in site.data.links %}
+			<li>{{ link.description }}: {{ link.url }}</li>
+			{% endfor %}
+		</ul>
+	</div>
+
+</section>
+<!-- end Links -->

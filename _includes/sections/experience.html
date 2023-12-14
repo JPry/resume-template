@@ -1,0 +1,21 @@
+<!-- begin Experience -->
+<section class="content-section experience">
+
+	<header class="section-header">
+		<a id="user-content-experience" class="anchor" href="#" aria-hidden="true"></a>
+		<h2><a href="#user-content-experience">{{ site.resume_section_labels.experience }}</a></h2>
+	</header>
+
+	{% for job in site.data.experience limit:5 %}
+	<div class="resume-item" itemscope itemprop="worksFor" itemtype="https://schema.org/Organization">
+		<h3 class="resume-item-title" itemprop="name">{{ job.company }}</h3>
+		<h4 class="resume-item-details" itemprop="description">
+			<span class="left">{{ job.position }}</span>
+			<span class="right">{{ job.duration }}</span>
+		</h4><br />
+		<div class="resume-item-copy">{{ job.summary | markdownify }}</div>
+	</div>
+	{% endfor %}
+
+</section>
+<!-- end Experience -->

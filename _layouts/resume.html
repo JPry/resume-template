@@ -7,232 +7,43 @@
 
 <div class="wrapper" itemscope itemtype="https://schema.org/Person">
 
-	<header class="page-header">
-
-		<!-- You can turn off the avatar in _config.yml by setting to false -->
-		{% if site.resume_avatar %}
-		<img src="https://www.gravatar.com/avatar/{{ site.resume_avatar }}?rating=G&size=100" alt="my photo" class="avatar no-print" itemprop="image">
-		{% endif %}
-
-		<!-- Your name is defined in the _config.yml file -->
-		<h1 class="header-name" itemprop="name">{{ site.resume_name }}</h1>
-
-		<!-- Contact buttons don't work in print, configure in the _config.yml file, remove "print-only" to display always. -->
-		<div class="header-contact-info print-only" itemprop="contact-info">
-			<p>{{ site.resume_header_contact_info }}</p>
-		</div>
-
-		<div class="title-bar no-print">
-			<h2 class="header-title" itemprop="jobTitle">{% if page.resume_title %}{{ page.resume_title }}{% else %}{{ site.resume_title }}{% endif %}</h2>
-			{% include icon-links.html %}
-		</div>
-
-		<div class="executive-summary no-print" itemprop="description">
-			{% if page.header_intro %}
-			{{ page.header_intro | markdownify }}
-			{% else %}
-			{{ site.resume_header_intro | markdownify }}
-			{% endif %}
-		</div>
-
-		{% if site.resume_looking_for_work == 'yes' %}
-		<a href="mailto:{{ site.resume_contact_email }}" class="contact-button no-print" itemprop="email">Contact me</a>
-		{% elsif site.resume_looking_for_work == 'no' %}
-		<a class="contact-button not-looking no-print">I'm not looking for work right now.</a>
-		{% endif %}
-
-	</header>
+	{% include header.html %}
 
 	{% if site.resume_section_skills %}
-	<!-- begin Skills -->
-	<section class="content-section skills">
-
-		<header class="section-header">
-			<a id="user-content-skills" class="anchor" href="#" aria-hidden="true"></a>
-			<h2><a href="#user-content-skills">Skills</a></h2>
-		</header>
-		{% for skill in site.data.skills %}
-		{% if page.skill_skip and page.skill_skip contains skill.skill %}
-			{% continue %}
-		{% else %}
-		<div class="resume-item">
-			<h4 class="resume-item-details">{{ skill.skill }}</h4>
-			{% if skill.description %}
-			<p class="resume-item-copy">{{ skill.description }}</p>
-			{% endif %}
-		</div>
-		{% endif %}
-		{% endfor %}
-
-	</section>
-	<!-- end Skills -->
+		{% include sections/skills.html %}
 	{% endif %}
 
 	{% if site.resume_section_projects %}
-	<!-- begin Projects -->
-	<section class="content-section projects">
-		<header class="section-header">
-			<a id="user-content-projects" class="anchor" href="#" aria-hidden="true"></a>
-			<h2><a href="#user-content-projects">Projects</a></h2>
-		</header>
-
-		{% for project in site.data.projects %}
-		<div class="resume-item" itemscope itemprop="worksFor" itemtype="https://schema.org/Organization">
-			<h3 class="resume-item-title" itemprop="name">{{ project.project }}</h3>
-			<h4 class="resume-item-details" itemprop="description">
-				<span class="left">{{ project.role }}</span>
-				{% if project.duration %}
-				<span class="right">{{ project.duration }}</span>
-				{% endif %}
-			</h4>
-			<br />
-			<div class="resume-item-copy">{{ project.description | markdownify }}</div>
-		</div>
-		{% endfor %}
-
-	</section>
-	<!-- end Projects -->
+		{% include sections/projects.html %}
 	{% endif %}
 
 	{% if site.resume_section_experience %}
-	<!-- begin Experience -->
-	<section class="content-section experience">
-
-		<header class="section-header">
-			<a id="user-content-experience" class="anchor" href="#" aria-hidden="true"></a>
-			<h2><a href="#user-content-experience">Experience</a></h2>
-		</header>
-
-		{% for job in site.data.experience limit:5 %}
-		<div class="resume-item" itemscope itemprop="worksFor" itemtype="https://schema.org/Organization">
-			<h3 class="resume-item-title" itemprop="name">{{ job.company }}</h3>
-			<h4 class="resume-item-details" itemprop="description">
-				<span class="left">{{ job.position }}</span>
-				<span class="right">{{ job.duration }}</span>
-			</h4><br />
-			<div class="resume-item-copy">{{ job.summary | markdownify }}</div>
-		</div><!-- end of resume-item -->
-		{% endfor %}
-
-	</section>
-	<!-- end Experience -->
+		{% include sections/experience.html %}
 	{% endif %}
 
-
 	{% if site.resume_section_education %}
-	<!-- begin Education -->
-	<section class="content-section education">
-		<header class="section-header">
-			<a id="user-content-education" class="anchor" href="#" aria-hidden="true"></a>
-			<h2><a href="#user-content-education">Education</a></h2>
-		</header>
-
-		{% for education in site.data.education %}
-		<div class="resume-item" itemscope itemprop="worksFor" itemtype="https://schema.org/CollegeOrUniversity">
-			<h3 class="resume-item-title" itemprop="name">{{ education.uni }}</h3>
-			<h4 class="resume-item-details" itemprop="description">
-				<span class="left">{{ education.degree }}</span>
-				<span class="right">{{ education.year }}</span>
-			</h4>
-			<h5 class="resume-item-details" itemprop="description">{{ education.awards }}</h5>
-			<div class="resume-item-copy">{{ education.summary | markdownify }}</div>
-		</div>
-		{% endfor %}
-	</section>
-	<!-- end Education -->
+		{% include sections/education.html %}
 	{% endif %}
 
 	{% if site.resume_section_recognition %}
-	<!-- begin Recognition -->
-	<section class="content-section recognition">
-
-		<header class="section-header">
-			<a id="user-content-recognition" class="anchor" href="#" aria-hidden="true"></a>
-			<h2><a href="#user-content-recognition">Recognition</a></h2>
-		</header>
-
-		{% for recognition in site.data.recognitions %}
-		<div class="resume-item">
-			<h3 class="resume-item-title" itemprop="award">{{ recognition.award }}</h3>
-			<h4 class="resume-item-details">{{ recognition.organisation }} &bull; {{ recognition.year }}</h4>
-			<div class="resume-item-copy">{{ recognition.summary | markdownify }}</div>
-		</div>
-		{% endfor %}
-
-	</section>
-	<!-- end Recognition -->
+	{% include sections/recognition.html %}
 	{% endif %}
 
 	{% if site.resume_section_associations %}
-	<!-- begin Associations -->
-	<section class="content-section associations">
-
-		<header class="section-header">
-			<a id="user-content-associations" class="anchor" href="#user-content-associations" aria-hidden="true"></a>
-			<h2><a href="#user-content-associations">Associations</a></h2>
-		</header>
-
-		{% for association in site.data.associations %}
-		<div class="resume-item">
-			<h3 class="resume-item-title"><a href="https://beerfortheworld.com">{{ association.organisation }}</a></h3>
-			<h4 class="resume-item-details">{{ association.role }} &bull; {{ association.year }}</h4>
-			<div class="resume-item-copy">{{ association.summary | markdownify }}</div>
-		</div>
-		{% endfor %}
-
-	</section>
-	<!-- end Associations -->
+		{% include sections/associations.html %}
 	{% endif %}
 
 	{% if site.resume_section_links %}
-	<!-- begin Links -->
-	<section class="content-section links">
-
-		<header class="section-header">
-			<a id="user-content-links" class="anchor" href="#user-content-links" aria-hidden="true"></a>
-			<h2><a href="#user-content-links">Additional Links</a></h2>
-		</header>
-
-		<div class="resume-item">
-			<ul class="resume-item-list no-print">
-				{% for link in site.data.links %}
-				<li><a href="{{ link.url }}">{{ link.description }}</a></li>
-				{% endfor %}
-			</ul>
-			<ul class="resume-item-list print-only">
-				{% for link in site.data.links %}
-				<li>{{ link.description }}: {{ link.url }}</li>
-				{% endfor %}
-			</ul>
-		</div>
-
-	</section>
-	<!-- end Links -->
+		{% include sections/links.html %}
 	{% endif %}
 
 	{% if site.resume_print_social_links %}
-	<!-- begin Print Social Links -->
-	<section class="content-section social-links print-only">
-
-		<header class="section-header">
-			<h2>Social Links</h2>
-		</header>
-
-		<div class="resume-item">
-			{% include print-social-links.html %}
-		</div>
-
-	</section>
-	<!-- end Print Social Links -->
+		{% include sections/social-links.html %}
 	{% endif %}
 
-	<footer class="page-footer no-print">
-		<p class="footer-line">Made by <a href="https://github.com/JPry">JPry</a>, inspired by
-			<a href="https://github.com/jglovier/resume-template">jglovier's resume template</a>.</p>
-	</footer>
+	{% include footer.html %}
 
 </div>
 
 </body>
-
 </html>

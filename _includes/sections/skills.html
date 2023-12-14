@@ -1,0 +1,22 @@
+<!-- begin Skills -->
+<section class="content-section skills">
+
+	<header class="section-header">
+		<a id="user-content-skills" class="anchor" href="#" aria-hidden="true"></a>
+		<h2><a href="#user-content-skills">{{ site.resume_section_labels.skills }}</a></h2>
+	</header>
+	{% for skill in site.data.skills %}
+	{% if page.skill_skip and page.skill_skip contains skill.skill %}
+	{% continue %}
+	{% else %}
+	<div class="resume-item">
+		<h4 class="resume-item-details">{{ skill.skill }}</h4>
+		{% if skill.description %}
+		<p class="resume-item-copy">{{ skill.description }}</p>
+		{% endif %}
+	</div>
+	{% endif %}
+	{% endfor %}
+
+</section>
+<!-- end Skills -->

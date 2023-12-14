@@ -1,0 +1,18 @@
+<!-- begin Associations -->
+<section class="content-section associations">
+
+	<header class="section-header">
+		<a id="user-content-associations" class="anchor" href="#user-content-associations" aria-hidden="true"></a>
+		<h2><a href="#user-content-associations">{{ site.resume_section_labels.associations }}</a></h2>
+	</header>
+
+	{% for association in site.data.associations %}
+	<div class="resume-item">
+		<h3 class="resume-item-title"><a href="https://beerfortheworld.com">{{ association.organisation }}</a></h3>
+		<h4 class="resume-item-details">{{ association.role }} &bull; {{ association.year }}</h4>
+		<div class="resume-item-copy">{{ association.summary | markdownify }}</div>
+	</div>
+	{% endfor %}
+
+</section>
+<!-- end Associations -->
