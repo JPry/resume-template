@@ -10,7 +10,11 @@
 	{% include header.html %}
 
 	{% if site.resume_section_skills %}
-		{% include sections/skills.html %}
+		{% if page.short_skills %}
+			{% include sections/skills-short.html %}
+		{% else %}
+			{% include sections/skills.html %}
+		{% endif %}
 	{% endif %}
 
 	{% if site.resume_section_projects %}
