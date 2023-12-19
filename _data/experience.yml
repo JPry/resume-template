@@ -8,7 +8,8 @@
       extension for integrating WooCommerce shops with Google Merchant Center.
     - Created [a GitHub Action](https://github.com/woocommerce/grow/tree/trunk/packages/github-actions/actions/hook-documentation)
       for documenting WordPress hooks within a codebase and generating a markdown file.
-    - Collaborated with social Partners (Meta, Google, TikTok, and Pinterest) to develop and maintain integrations with WooCommerce.
+    - Collaborated with social Partners (Meta, Google, TikTok, and Pinterest) to develop and maintain integrations with WooCommerce,
+      allowing merchants to directly tie social channels to their stores.
     - Collaborated with colleagues to develop the
       [Order Attribution](https://github.com/woocommerce/woocommerce-order-source-attribution) feature for WooCommerce,
       and helped prepare it to be [included into WooCommerce core](https://github.com/woocommerce/woocommerce/pull/39701).
@@ -22,7 +23,8 @@
       [WooCommerce Subscriptions](https://woocommerce.com/products/woocommerce-subscriptions/),
       [WooCommerce One Page Checkout](https://woocommerce.com/products/woocommerce-one-page-checkout/), and
       [Action Scheduler](https://actionscheduler.org)
-    - Collaborated with Support team coworkers on support tasks, product insight, and product enhancements and bugs
+    - Collaborated with Support team coworkers on support tasks, product insight, and product enhancements and bugs,
+      resulting in satisfying customer needs and requests.
     - Communicated directly with clients of [Subscribe.me](https://subscribe.me) and collaborated with them
       to achieve their business goals
 
