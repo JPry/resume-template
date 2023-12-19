@@ -13,6 +13,7 @@ exclude:
   - README.md
   - Gemfile*
   - .idea
+  - .editorconfig
 
 # Resume settings
 resume_avatar: 84552f74b71a1a3e6aae380aa9ab3bd3
