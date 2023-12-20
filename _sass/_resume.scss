@@ -222,11 +222,21 @@
 		line-height: 1rem;
 	}
 
+	ul {
+		page-break-inside: avoid;
+	}
+
 	a[href^="http"]:after {
 		content: " (" attr(href) ")";
 		font-size: 0.8em;
 		font-weight: normal;
 		text-decoration: none;
+	}
+
+	.no-print-links {
+		a[href^="http"]:after {
+			content: "";
+		}
 	}
 
 	.page-header {
@@ -256,6 +266,7 @@
 
 		.resume-item {
 			margin-bottom: 1rem;
+			page-break-inside: avoid;
 		}
 
 		.resume-item-title {
