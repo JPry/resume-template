@@ -9,9 +9,11 @@
 	<div class="resume-item" itemscope itemprop="worksFor" itemtype="https://schema.org/CollegeOrUniversity">
 		<h3 class="resume-item-title" itemprop="name">{{ education.uni }}</h3>
 		<h4 class="resume-item-details" itemprop="description">
-			<span class="left">{{ education.degree }}</span>
 			{% if education.year %}
+				<span class="left">{{ education.degree }}</span>
 				<span class="right">{{ education.year }}</span>
+			{% else %}
+				{{ education.degree }}
 			{% endif %}
 		</h4>
 		{% if education.awards %}
