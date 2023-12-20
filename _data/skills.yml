@@ -20,10 +20,10 @@
   description: Creating projects utilizing Composer dependencies, as well as setting up projects on Packagist.
 - skill: Symfony Components
   description: Creating custom Console applications and using Dependency Injection, Finder, Process, and Yaml components.
-- skill: Python
-  description: Developing unit tests for command line applications and familiarity with Python language.
 - skill: JavaScript
   description: Developing scripts to manipulate page content and familiarity with jQuery and React.
+- skill: Python
+  description: Developing unit tests for command line applications and familiarity with Python language.
 - skill: Ansible
   description: Writing custom Ansible playbooks and using playbooks to manage and configure machines.
 - skill: Nginx
