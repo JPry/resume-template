@@ -25,12 +25,12 @@
 		{% include sections/experience.html %}
 	{% endif %}
 
-	{% if site.resume_section_education %}
+	{% if site.resume_section_education and page.show_education %}
 		{% include sections/education.html %}
 	{% endif %}
 
 	{% if site.resume_section_recognition %}
-	{% include sections/recognition.html %}
+		{% include sections/recognition.html %}
 	{% endif %}
 
 	{% if site.resume_section_associations %}

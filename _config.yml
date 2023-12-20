@@ -77,3 +77,6 @@ defaults:
     values:
       layout: "resume"
       show_contact_button: true
+      show_education: false
+      no_print_links: true
+      short_skills: true
