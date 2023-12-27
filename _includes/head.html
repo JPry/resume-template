@@ -15,7 +15,7 @@
 	<!-- Allow for multiple CSS files in a given page. -->
 	{% if page.css %}
 		{% for css in page.css %}
-			<link rel="stylesheet" href="{{ css | prepend: 'css/' | prepend: site.baseurl }}">
+			<link rel="stylesheet" href="{{ css | prepend: '/css/' }}">
 		{% endfor %}
 	{% else %}
 		<link rel="stylesheet" href="{{ 'css/main.css' | prepend: site.baseurl }}">
