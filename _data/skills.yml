@@ -4,13 +4,17 @@
   description: |
     Wide experience across many projects, including developing custom code and refactoring existing code. I have
     experience in both object-oriented and procedural PHP, and I am familiar with the PHP-FIG standards.
+- skill: TypeScript/JavaScript
+  description: Developing complex React components using TypeScript and JSX. Developing scripts to manipulate page content and familiarity with jQuery.
+- skill: React/Redux
+  description: Creating complex React components and managing state with Redux.
 - skill: WordPress
   description: |
     Deep knowledge of core code and best practices. Experience writing unit tests, working with WP CLI,
     and developing WP REST API endpoints. Core contributor.
 - skill: WooCommerce
   description: Extension developer and core contributor.
-- skill: Unit Tests
+- skill: Unit Tests/PHPUnit/Jest/Pest
   description: |
     Experience with writing tests using both PHPUnit and Pest frameworks. I've also written tests in Python
     and JavaScript when the project needs have required it.
@@ -20,15 +24,16 @@
   description: Creating projects utilizing Composer dependencies, as well as setting up projects on Packagist.
 - skill: Symfony Components
   description: Creating custom Console applications and using Dependency Injection, Finder, Process, and Yaml components.
-- skill: JavaScript
-  description: Developing scripts to manipulate page content and familiarity with jQuery and React.
 - skill: Python
   description: Developing unit tests for command line applications and familiarity with Python language.
 - skill: Ansible
   description: Writing custom Ansible playbooks and using playbooks to manage and configure machines.
 - skill: Nginx
   description: Configuring Nginx servers.
-- skill: HTML
+- skill: HTML/JSX
   description: Developing markup for web rendering.
 - skill: CSS
   description: Styling markup according to designs, and experience with Sass.
+- skill: MySQL
+- skill: REST APIs
+- skill:

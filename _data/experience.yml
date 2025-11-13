@@ -1,5 +1,16 @@
 # Jobs
 
+- company: Liquid Web, Inc.
+  position: Senior WordPress Engineer
+  duration: 2023 &ndash; 2025
+  summary: |
+    - Developed modern React-based editing experience for The Events Calendar's Event Editor
+    - Developed Fees feature for Event Tickets allowing additional fees on ticket purchases
+    - Developed Coupons feature for Event Tickets allowing discount codes on ticket purchases
+    - Developed and maintained features for The Events Calendar plugin
+    - Collaborated with cross-functional international teams to
+      ensure seamless integration of new features and maintain high code quality standards.
+
 - company: Automattic, Inc
   position: Software Engineer
   duration: 2019 &ndash; 2023

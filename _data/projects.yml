@@ -1,5 +1,22 @@
 # Projects
 
+- project: The Events Calendar Event Editor
+  role: Developer
+  duration: false
+  description: |
+    Developed a modern React-based editing experience for The Events Calendar's
+    Event Editor, enhancing usability and functionality.
+- project: Coupons for Event Tickets
+  role: Developer
+  description: |
+    Developed a feature for the Event Tickets plugin that allows site owners to
+    create and manage discount codes for ticket purchases.
+- project: Fees for Event Tickets
+  role: Developer
+  description: |
+    Developed a feature for the Event Tickets plugin that allows site owners to
+    add additional fees to ticket purchases.
+
 - project: Custom GitHub Action
   role: Developer
   duration: false
@@ -26,7 +43,7 @@
     In a partnership with Google, I worked to develop the plugin architecture for the
     [Google Listings and Ads](https://github.com/woocommerce/google-listings-and-ads) extension. The purpose of
     this extension is to integrate WooCommerce shops with the Google Merchant Center.
-    
+
     The architecture of this extension was designed to take advantage of modern PHP practices within a WordPress plugin,
     and borrows ideas from both WooCommerce core and other modern plugin developers. One of the design goals was to
     limit repetition in the codebase, and to compartmentalize the code into small, easily testable units.
