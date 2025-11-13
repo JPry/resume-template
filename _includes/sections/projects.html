@@ -5,8 +5,8 @@
 		<h2><a href="#user-content-projects">{{ site.resume_section_labels.projects }}</a></h2>
 	</header>
 
-	{% for project in site.data.projects %}
-	<div class="resume-item" itemscope itemprop="worksFor" itemtype="https://schema.org/Organization">
+	{% for project in site.data.projects limit:4 %}
+	<div class="resume-item" itemscope itemprop="worksFor" itemtype="https://schema.org/Project">
 		<h3 class="resume-item-title" itemprop="name">{{ project.project }}</h3>
 		<h4 class="resume-item-details" itemprop="description">
 			<span class="left">{{ project.role }}</span>
